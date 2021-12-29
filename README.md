@@ -15,12 +15,15 @@ But there are lot of problems to be mentioned:
 For the Mujoco, at last, please enter in the terminal ./simulate ../model/humanoid.xml on the path /.mujoco/mujoco200/bin
 
 For the Python3.9 and Anaconda3, it is extreme significant to create a new environment (the edition of the python should be larger than 3.8) in its navigator and install the rest of softewares in the terminal like this one,where Robotics is the name of the new environment.
+
 ![image](https://user-images.githubusercontent.com/82950147/147616678-cbd72c1f-96b9-40b2-8d47-1fa34eb2d432.png)
 
 For the pycharm, the point is the setting of the environmental variables. The specific steps are shown here.
+
 ![image](https://user-images.githubusercontent.com/82950147/147616864-c655ccaf-1e45-468f-b156-00903b441692.png)
 ![image](https://user-images.githubusercontent.com/82950147/147616884-243546e3-3857-41af-a353-ecf96984d5f7.png)
 ![image](https://user-images.githubusercontent.com/82950147/147616911-82df1331-630f-4e7e-a8c7-8d16b0825f57.png)
+
 However, the libgrew.so name here can be different for various computers. It can be the libGLEW.so or libGLEW2.so. And the path of these two in the picture should be the actual path in your computer.
 
 For the Mujoco_py, it is also necessary to install the gcc module by:
