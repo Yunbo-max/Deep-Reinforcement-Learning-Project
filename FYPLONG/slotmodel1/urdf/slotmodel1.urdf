@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="slotmodel1">
+  <link concave="yes" name="baseLink">
+    <inertial>
+      <origin
+        xyz="0 0.025203 0.0073269"
+        rpy="0 0 0" />
+      <mass
+        value="0.011893" />
+      <inertia
+        ixx="5.2812E-06"
+        ixy="-3.1287E-23"
+        ixz="6.1651E-23"
+        iyy="3.1369E-06"
+        iyz="-2.6355E-08"
+        izz="7.9493E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://slotmodel1/meshes/base_link.stl.obj" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision concave="yes" >
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://slotmodel1/meshes/base_link.stl.obj" />
+      </geometry>
+      <contact_coefficients mu="0" kp="1000" kd="1.0"/>
+    </collision>
+  </link>
+</robot>

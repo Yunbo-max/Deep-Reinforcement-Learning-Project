@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="boltmodel">
+  <link  name="base_link">
+    <inertial>
+      <origin
+        xyz="0 0.012421 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0029688" />
+      <inertia
+        ixx="2.8232E-07"
+        ixy="8.6096E-39"
+        ixz="-2.7926E-40"
+        iyy="5.6714E-08"
+        iyz="-4.029E-24"
+        izz="2.8232E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://boltmodel/meshes/base_link_bolt.obj" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision  >
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://boltmodel/meshes/base_link_bolt.obj" />
+      </geometry>
+      <contact_coefficients mu="0" kp="1000" kd="1.0"/>
+    </collision>
+  </link>
+</robot>
