@@ -1,5 +1,5 @@
 # Self-learning robotics research on Deep reinforcement learning
-A final year project of a student in university of birmingham 2021
+A final year project of a student in university of birmingham from 2021 to 2022.
 
 Environmental set-up: 
 VMware + Linux Ubuntu20.04 + Mujoco 2.0 + Python3.9 + Anaconda3 + Pycharm + Mujoco_py + Robosuite + Pybullet + Gym +Open3D + H5py + Pygame
