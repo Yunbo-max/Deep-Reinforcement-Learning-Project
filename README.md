@@ -75,7 +75,10 @@ For the Mujoco_py, it is also necessary to install the gcc module by:
 ~gcc --version
 To validate the gcc.
 
+## 🧪 Key Experiments
+
 ### Experiment Settings
+```python
 # Experiment 1: Reward Function Comparison
 experiments = {
     "sparse_reward": {
@@ -102,7 +105,7 @@ for exp_name, params in experiments.items():
     train(env, agent, params, modalities["multimodal"])
 
 
-### Experiment Results
+
 results = {
     "metrics": {
         "success_rate": {
