@@ -76,56 +76,38 @@ For the Mujoco_py, it is also necessary to install the gcc module by:
 To validate the gcc.
 
 ## 🧪 Key Experiments
+## 🧪 Experiment Settings
 
-### Experiment Settings
-```python
-# Experiment 1: Reward Function Comparison
-experiments = {
-    "sparse_reward": {
-        "type": "sparse",
-        "success_bonus": 10.0,
-        "time_penalty": -0.01
-    },
-    "dense_reward": {
-        "type": "dense",
-        "distance_scale": 0.5,
-        "contact_penalty": -0.1
-    }
-}
+### Reward Function Comparison
+| Parameter         | Sparse Reward       | Dense Reward        |
+|-------------------|--------------------|--------------------|
+| Type              | `sparse`           | `dense`            |
+| Success Bonus     | `10.0`             | -                  |
+| Time Penalty      | `-0.01`            | -                  |
+| Distance Scale    | -                  | `0.5`              |
+| Contact Penalty   | -                  | `-0.1`             |
 
-# Experiment 2: Perception Modality Ablation
-modalities = {
-    "vision_only": ["rgb", "depth"],
-    "haptics_only": ["force", "torque"],
-    "multimodal": ["rgb", "depth", "force", "torque"]
-}
+### Perception Modality Ablation
+| Modality      | Sensors Enabled                  |
+|--------------|----------------------------------|
+| Vision Only  | `rgb`, `depth`                   |
+| Haptics Only | `force`, `torque`                |
+| Multimodal   | `rgb`, `depth`, `force`, `torque` |
 
-# Running experiments
-for exp_name, params in experiments.items():
-    train(env, agent, params, modalities["multimodal"])
+## 📊 Experiment Results
 
+### Performance Metrics
+| Metric             | Sparse Reward | Dense Reward | Improvement |
+|--------------------|--------------|--------------|------------|
+| Success Rate       | 0.72         | 0.85         | +18%       |
+| Convergence Time   | 1200         | 850          | -29%       |
+| Contact Accuracy   | -            | -            | -          |
 
+### Modality Comparison
+| Metric             | Vision Only | Multimodal | Improvement |
+|--------------------|------------|------------|------------|
+| Contact Accuracy   | 0.65       | 0.89       | +37%       |
 
-results = {
-    "metrics": {
-        "success_rate": {
-            "sparse_reward": 0.72,
-            "dense_reward": 0.85,
-            "improvement": "+18%"
-        },
-        "convergence_time": {
-            "sparse_reward": 1200,
-            "dense_reward": 850,
-            "improvement": "-29%"
-        },
-        "contact_accuracy": {
-            "vision_only": 0.65,
-            "multimodal": 0.89,
-            "improvement": "+37%"
-        }
-    },
-    "visualization": {
-        "learning_curve": "results/learning_curves.png",
-        "contact_heatmap": "results/contact_map.png"
-    }
-}
+## 📈 Visualizations
+- Learning Curves: `results/learning_curves.png`
+- Contact Heatmap: `results/contact_map.png`
