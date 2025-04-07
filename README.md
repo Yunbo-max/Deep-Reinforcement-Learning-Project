@@ -2,7 +2,14 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-![Project Banner](https://user-images.githubusercontent.com/82950147/147616678-cbd72c1f-96b9-40b2-8d47-1fa34eb2d432.png)
+![Figure: Learning Curves](visual1.png)
+*Figure 1: Training progress across different reward functions*
+![Figure: Learning Curves](visual2.png)
+*Figure 2: Training progress across different reward functions*
+![Figure: Learning Curves](visual3.png)
+*Figure 3: Training progress across different reward functions*
+![Figure: Learning Curves](visual4.png)
+*Figure 4: Training progress across different reward functions*
 
 ## 📝 Project Description
 This research investigates autonomous robotic disassembly using deep reinforcement learning (DRL) combined with multimodal perception (vision + haptics). The system was tested on a door chain disassembly task, demonstrating:
